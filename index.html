@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Project - Evaluation Presentation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="particles"></div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">Project Showcase</div>
+        <ul class="nav-menu">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#technology-stack">Technology</a></li>
+          <li><a href="#project-architecture">Architecture</a></li>
+          <li class="nav-dropdown">
+            <a href="#features" class="nav-dropdown-toggle">Features ▼</a>
+            <ul class="nav-dropdown-menu">
+              <li><a href="#user-management">User Management</a></li>
+              <li><a href="#appointment-system">Appointment System</a></li>
+              <li><a href="#service-management">Service Management</a></li>
+              <li><a href="#doctor-management">Doctor Management</a></li>
+              <li><a href="#blog-system">Blog System</a></li>
+              <li><a href="#menstrual-tracker">Menstrual Tracker</a></li>
+              <li><a href="#backend-management">Backend Management</a></li>
+            </ul>
+          </li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <li>
+            <a
+              href="https://github.com/bunpmc/FE-Gender-Healthcare-Service-Management-System"
+              target="_blank"
+              class="nav-external-link"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1oBLSiuSfPSWVeXdtKrjtQG4J4tGFj0DBvmVC1Jv1SRA/edit?usp=drivesdk"
+              target="_blank"
+              class="nav-external-link"
+              >SRS Doc</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Project Overview Section -->
+      <section id="overview" class="section">
+        <div class="container">
+          <h1 class="section-title">Project Overview</h1>
+          <div class="overview-content animate-on-scroll">
+            <h2>Gender Healthcare Service Management System</h2>
+            <p class="project-description">
+              This project delivers two websites: Frontend for clinic customers
+              to book appointments, view services, find doctors, and manage
+              personal profiles. Backend for clinic owners & staff to manage
+              operations, serve clients, and grow their business.
+            </p>
+
+            <!-- Project Image Placeholder -->
+            <div class="image-placeholder">
+              <img src="" alt="Project Screenshot" style="display: none" />
+              <div class="placeholder-text">
+                <span>Project Main Screenshot</span>
+                <small>Replace src="" with your image URL</small>
+              </div>
+            </div>
+
+            <div class="project-stats">
+              <div class="highlight-card">
+                <h3>Target Users</h3>
+                <p>
+                  Gen Z, Millennials, clinic owners & staff seeking fast and
+                  convenient online healthcare services
+                </p>
+              </div>
+              <div class="highlight-card">
+                <h3>Technology Stack</h3>
+                <p>
+                  Angular, Node.js, Supabase, modern web technologies for
+                  scalable healthcare solutions
+                </p>
+              </div>
+              <div class="highlight-card">
+                <h3>Development Team</h3>
+                <p>
+                  Passionate PTIT computer engineering students committed to
+                  real-world tech solutions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team" class="section">
+        <div class="container">
+          <h1 class="section-title">Meet Our Team</h1>
+          <div class="team-intro animate-on-scroll">
+            <p>
+              Passionate PTIT computer engineering students building the future
+              of healthcare technology
+            </p>
+          </div>
+          <div class="team-grid animate-on-scroll">
+            <div class="team-member khanh">
+              <div class="member-photo">
+                <img src="./Khanh.png" alt="Nguyen Quoc Khanh" />
+                <div class="photo-fallback">
+                  <span>QK</span>
+                </div>
+              </div>
+              <div class="member-info">
+                <h3>Nguyen Quoc Khanh</h3>
+                <p class="member-role">Frontend Lead & Project Manager</p>
+                <div class="member-badges">
+                  <span class="badge primary">Angular</span>
+                  <span class="badge secondary">UX/UI</span>
+                  <span class="badge tertiary">Node.js</span>
+                </div>
+                <p class="member-description">
+                  Specializes in modern frontend frameworks and design systems.
+                  Passionate about creating intuitive healthcare interfaces that
+                  enhance user experience.
+                </p>
+                <div class="member-stats">
+                  <div class="stat">
+                    <span class="stat-number">29</span>
+                    <span class="stat-label">Features</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-number">26.4%</span>
+                    <span class="stat-label">Contribution</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member chau">
+              <div class="member-photo">
+                <img src="./Chau.png" alt="Pham Hoang Minh Chau" />
+                <div class="photo-fallback">
+                  <span>MC</span>
+                </div>
+              </div>
+              <div class="member-info">
+                <h3>Pham Hoang Minh Chau</h3>
+                <p class="member-role">Backend Lead & AI Specialist</p>
+                <div class="member-badges">
+                  <span class="badge primary">Supabase</span>
+                  <span class="badge secondary">Node.js</span>
+                  <span class="badge tertiary">AI/ML</span>
+                </div>
+                <p class="member-description">
+                  Backend architecture expert with focus on scalable systems and
+                  AI integration. Loves clean code, comprehensive documentation,
+                  and innovative solutions.
+                </p>
+                <div class="member-stats">
+                  <div class="stat">
+                    <span class="stat-number">33</span>
+                    <span class="stat-label">Features</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-number">30.0%</span>
+                    <span class="stat-label">Contribution</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member quan">
+              <div class="member-photo">
+                <img src="./Quan.png" alt="Ly Trung Quan" />
+                <div class="photo-fallback">
+                  <span>TQ</span>
+                </div>
+              </div>
+              <div class="member-info">
+                <h3>Ly Trung Quan</h3>
+                <p class="member-role">Database Architect & Analytics</p>
+                <div class="member-badges">
+                  <span class="badge primary">Database</span>
+                  <span class="badge secondary">Supabase</span>
+                  <span class="badge tertiary">Analytics</span>
+                </div>
+                <p class="member-description">
+                  Database optimization specialist focused on performance and
+                  data integrity. Expert in backend systems with a passion for
+                  clean, efficient code.
+                </p>
+                <div class="member-stats">
+                  <div class="stat">
+                    <span class="stat-number">26</span>
+                    <span class="stat-label">Features</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-number">23.6%</span>
+                    <span class="stat-label">Contribution</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member an">
+              <div class="member-photo">
+                <img src="./An.jpg" alt="Nhat An" />
+                <div class="photo-fallback">
+                  <span>NA</span>
+                </div>
+              </div>
+              <div class="member-info">
+                <h3>Nhat An</h3>
+                <p class="member-role">Full-Stack Developer & UI/UX</p>
+                <div class="member-badges">
+                  <span class="badge primary">Angular</span>
+                  <span class="badge secondary">Full-Stack</span>
+                  <span class="badge tertiary">UI/UX</span>
+                </div>
+                <p class="member-description">
+                  Versatile developer with strong frontend skills and backend
+                  capabilities. Brings positive energy and creative solutions to
+                  every project challenge.
+                </p>
+                <div class="member-stats">
+                  <div class="stat">
+                    <span class="stat-number">22</span>
+                    <span class="stat-label">Features</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-number">20.0%</span>
+                    <span class="stat-label">Contribution</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology Stack Section -->
+      <section id="technology-stack" class="section">
+        <div class="container">
+          <h1 class="section-title">Technology Stack & Tools</h1>
+          <div class="tech-stack-content animate-on-scroll">
+            <!-- Project Management Tools -->
+            <div class="tech-category">
+              <h3>Project Management Tools</h3>
+              <div class="tech-grid">
+                <div class="tech-card">
+                  <div class="tech-icon">
+                    <img src="./Jira.png" alt="Jira" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>Jira</h4>
+                  <p>
+                    Task management and project coordination with Kanban boards
+                    for agile development workflow
+                  </p>
+                </div>
+                <div class="tech-card">
+                  <div class="tech-icon">
+                    <img src="./Github.png" alt="GitHub" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>GitHub Projects</h4>
+                  <p>
+                    Version control, code collaboration, and integrated project
+                    management with issue tracking
+                  </p>
+                </div>
+                <div class="tech-card">
+                  <div class="tech-icon">
+                    <img src="./Discord.png" alt="Discord" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>Discord</h4>
+                  <p>
+                    Team communication, daily standups, and real-time
+                    collaboration during development
+                  </p>
+                </div>
+                <div class="tech-card">
+                  <div class="tech-icon">
+                    <img src="./Figma.png" alt="Figma" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>Figma</h4>
+                  <p>
+                    UI/UX design, prototyping, and design system management for
+                    consistent user experience
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Development Technologies -->
+            <div class="tech-category">
+              <h3>Development Technologies</h3>
+              <div class="tech-grid">
+                <div class="tech-card frontend">
+                  <div class="tech-icon">
+                    <img src="./Angular.png" alt="Angular" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>Angular</h4>
+                  <p>
+                    Frontend framework for building dynamic, responsive
+                    healthcare management interfaces
+                  </p>
+                </div>
+                <div class="tech-card frontend">
+                  <div class="tech-icon">
+                    <img src="./Typescript.png" alt="TypeScript" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>TypeScript</h4>
+                  <p>
+                    Type-safe JavaScript development for better code quality and
+                    maintainability
+                  </p>
+                </div>
+                <div class="tech-card frontend">
+                  <div class="tech-icon">
+                    <img src="./Tailwindcss.png" alt="HTML/CSS" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>HTML5 & Tailwindcss</h4>
+                  <p>
+                    Modern web standards for semantic markup and responsive
+                    design implementation
+                  </p>
+                </div>
+                <div class="tech-card backend">
+                  <div class="tech-icon">
+                    <img src="./Nodejs.png" alt="Node.js" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>Node.js</h4>
+                  <p>
+                    Server-side JavaScript runtime for building scalable backend
+                    APIs and services
+                  </p>
+                </div>
+                <div class="tech-card backend">
+                  <div class="tech-icon">
+                    <img src="./Supabase.png" alt="Supabase" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>Supabase</h4>
+                  <p>
+                    Backend-as-a-Service providing database, authentication, and
+                    real-time subscriptions
+                  </p>
+                </div>
+                <div class="tech-card backend">
+                  <div class="tech-icon">
+                    <img src="./Python.png" alt="Supabase" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>Python</h4>
+                  <p>
+                    Using Python to run Machine learning and chat bots for
+                    websites
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third-party Services -->
+            <div class="tech-category">
+              <h3>Third-party Services & APIs</h3>
+              <div class="tech-grid">
+                <div class="tech-card">
+                  <div class="tech-icon">
+                    <img src="./Vnpay.png" alt="VNPay" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>VNPay Gateway</h4>
+                  <p>
+                    Secure payment processing for appointment bookings and
+                    service payments
+                  </p>
+                </div>
+                <div class="tech-card">
+                  <div class="tech-icon">
+                    <img src="./Phone.png" alt="Twilio" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>SMS/OTP Service</h4>
+                  <p>
+                    Two-factor authentication and appointment reminders via SMS
+                    notifications
+                  </p>
+                </div>
+                <div class="tech-card">
+                  <div class="tech-icon">
+                    <img src="./Gmail.png" alt="Gmail" />
+                    <div class="icon-placeholder"></div>
+                  </div>
+                  <h4>Email Service</h4>
+                  <p>
+                    Automated email notifications for appointments,
+                    confirmations, and newsletters
+                  </p>
+                </div>
+                <div class="tech-card">
+                  <div class="tech-icon">
+                    <img src="./Google.png" alt="Google Auth" />
+                    <div class="icon-placeholder">☁️</div>
+                  </div>
+                  <h4>Google Auth</h4>
+                  <p>
+                    Google Authentication (Google Auth) is a secure
+                    authentication service provided by Google.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Architecture Section -->
+      <section id="project-architecture" class="section">
+        <div class="container">
+          <h1 class="section-title">Project Architecture & System Design</h1>
+          <div class="architecture-content animate-on-scroll">
+            <!-- Architecture Overview -->
+            <div class="architecture-overview">
+              <h3>System Architecture Overview</h3>
+              <div class="architecture-diagram">
+                <img src="./BE-BE.png" alt="System Architecture Overview" />
+              </div>
+              <p class="architecture-description">
+                Our healthcare management system follows a modern three-tier
+                architecture with clear separation between presentation layer
+                (Angular Frontend), business logic layer (Node.js Backend), and
+                data layer (Supabase/PostgreSQL). The system integrates multiple
+                third-party services for enhanced functionality.
+              </p>
+            </div>
+
+            <!-- System Components -->
+            <div class="architecture-section">
+              <h3>System Components & Integration Points</h3>
+              <div class="components-grid">
+                <div class="component-card frontend-component">
+                  <h4>Frontend Layer</h4>
+                  <ul>
+                    <li>
+                      <strong>Angular Components:</strong> Reusable UI
+                      components for appointments, user management
+                    </li>
+                    <li>
+                      <strong>Services:</strong> HTTP clients for API
+                      communication and state management
+                    </li>
+                    <li>
+                      <strong>Guards:</strong> Route protection and
+                      authentication validation
+                    </li>
+                    <li>
+                      <strong>Interceptors:</strong> Request/response handling
+                      and error management
+                    </li>
+                  </ul>
+                </div>
+                <div class="component-card backend-component">
+                  <h4>Backend Layer</h4>
+                  <ul>
+                    <li>
+                      <strong>API Routes:</strong> RESTful endpoints for all
+                      business operations
+                    </li>
+                    <li>
+                      <strong>Middleware:</strong> Authentication, validation,
+                      and error handling
+                    </li>
+                    <li>
+                      <strong>Controllers:</strong> Business logic and data
+                      processing
+                    </li>
+                    <li>
+                      <strong>Services:</strong> External API integrations and
+                      utility functions
+                    </li>
+                  </ul>
+                </div>
+                <div class="component-card database-component">
+                  <h4>Data Layer</h4>
+                  <ul>
+                    <li>
+                      <strong>PostgreSQL:</strong> Primary database for
+                      structured healthcare data
+                    </li>
+                    <li>
+                      <strong>Supabase:</strong> Real-time subscriptions and
+                      authentication
+                    </li>
+                    <li>
+                      <strong>Migrations:</strong> Database schema versioning
+                      and updates
+                    </li>
+                    <li>
+                      <strong>Indexes:</strong> Performance optimization for
+                      complex queries
+                    </li>
+                  </ul>
+                </div>
+                <div class="component-card integration-component">
+                  <h4>External Integrations</h4>
+                  <ul>
+                    <li>
+                      <strong>Payment Gateway:</strong> VNPay for secure
+                      transaction processing
+                    </li>
+                    <li>
+                      <strong>Communication:</strong> SMS/Email services for
+                      notifications
+                    </li>
+                    <li>
+                      <strong>Storage:</strong> Cloud services for file and
+                      image management
+                    </li>
+                    <li>
+                      <strong>AI Services:</strong> Machine learning for
+                      predictive analytics
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="section">
+        <div class="container">
+          <h1 class="section-title">
+            Project Features
+            <span class="function-counter">Total Functions: 111</span>
+          </h1>
+
+          <!-- User Management -->
+          <div class="function-category" id="user-management">
+            <h3>User Management</h3>
+
+            <!-- Workflow Description -->
+            <div class="category-workflow">
+              <h4>How It Works</h4>
+              <p>
+                Users can register new accounts, login securely, and manage
+                their personal profiles. The system handles authentication, data
+                validation, and provides a seamless user experience from
+                registration to profile management.
+              </p>
+            </div>
+
+            <!-- Main Flow Diagram -->
+            <div class="category-flow-diagram">
+              <h4>Main Flow</h4>
+              <div class="flow-image">
+                <img
+                  src="./flows/user-management-flow.png"
+                  alt="User Management Flow Diagram"
+                />
+                <div class="flow-placeholder">
+                  <span>User Management Flow Diagram</span>
+                  <small>Add flow diagram image here</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Functions List -->
+            <div class="category-functions">
+              <h4>Functions</h4>
+              <div class="features-grid">
+                <div class="feature-card function-khanh">
+                  <h3>User Registration UI</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>Registration form, validation, user onboarding flow</p>
+                </div>
+                <div class="feature-card function-khanh">
+                  <h3>User Login UI</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>
+                    Login interface, password recovery, remember me
+                    functionality
+                  </p>
+                </div>
+                <div class="feature-card function-khanh">
+                  <h3>Profile Management UI</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>
+                    Profile editing, avatar upload, personal information
+                    management
+                  </p>
+                </div>
+                <div class="feature-card function-chau">
+                  <h3>Authentication API</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Chau</strong>
+                  </p>
+                  <p>JWT tokens, session management, security middleware</p>
+                </div>
+                <div class="feature-card function-chau">
+                  <h3>User Data API</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Chau</strong>
+                  </p>
+                  <p>CRUD operations, data validation, profile updates</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX Screenshots -->
+            <div class="category-screenshots">
+              <h4>UI/UX Screenshots</h4>
+              <div class="screenshots-grid">
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/user-registration.png"
+                    alt="User Registration Screen"
+                  />
+                  <span class="screenshot-label">Registration Form</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/user-login.png"
+                    alt="User Login Screen"
+                  />
+                  <span class="screenshot-label">Login Interface</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/user-profile.png"
+                    alt="User Profile Screen"
+                  />
+                  <span class="screenshot-label">Profile Management</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/user-dashboard.png"
+                    alt="User Dashboard"
+                  />
+                  <span class="screenshot-label">User Dashboard</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Appointment System -->
+          <div class="function-category" id="appointment-system">
+            <h3>Appointment System</h3>
+
+            <!-- Workflow Description -->
+            <div class="category-workflow">
+              <h4>How It Works</h4>
+              <p>
+                Comprehensive appointment booking system allowing users to
+                schedule, manage, and track their healthcare appointments.
+                Features real-time availability, automated confirmations, and
+                seamless calendar integration.
+              </p>
+            </div>
+
+            <!-- Main Flow Diagram -->
+            <div class="category-flow-diagram">
+              <h4>Main Flow</h4>
+              <div class="flow-image">
+                <img
+                  src="./flows/appointment-system-flow.png"
+                  alt="Appointment System Flow Diagram"
+                />
+                <div class="flow-placeholder">
+                  <span>Appointment System Flow Diagram</span>
+                  <small>Add flow diagram image here</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Functions List -->
+            <div class="category-functions">
+              <h4>Functions</h4>
+              <div class="features-grid">
+                <div class="feature-card function-khanh">
+                  <h3>Booking Interface</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>
+                    Appointment booking form, date/time selection, service
+                    picker
+                  </p>
+                </div>
+                <div class="feature-card function-khanh">
+                  <h3>Calendar View</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>
+                    Interactive calendar, availability display, appointment
+                    overview
+                  </p>
+                </div>
+                <div class="feature-card function-chau">
+                  <h3>Booking API</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Chau</strong>
+                  </p>
+                  <p>Appointment creation, validation, conflict detection</p>
+                </div>
+                <div class="feature-card function-quan">
+                  <h3>Schedule Management</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Quan</strong>
+                  </p>
+                  <p>
+                    Time slot management, availability tracking, scheduling
+                    logic
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX Screenshots -->
+            <div class="category-screenshots">
+              <h4>UI/UX Screenshots</h4>
+              <div class="screenshots-grid">
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/appointment-booking.png"
+                    alt="Appointment Booking Screen"
+                  />
+                  <span class="screenshot-label">Booking Interface</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/appointment-calendar.png"
+                    alt="Appointment Calendar"
+                  />
+                  <span class="screenshot-label">Calendar View</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/appointment-history.png"
+                    alt="Appointment History"
+                  />
+                  <span class="screenshot-label">History Management</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/appointment-confirmation.png"
+                    alt="Booking Confirmation"
+                  />
+                  <span class="screenshot-label">Confirmation Screen</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Management -->
+          <div class="function-category" id="service-management">
+            <h3>Service Management</h3>
+
+            <!-- Workflow Description -->
+            <div class="category-workflow">
+              <h4>How It Works</h4>
+              <p>
+                Complete service catalog management system allowing users to
+                browse available healthcare services, view detailed information,
+                pricing, and make informed decisions about their healthcare
+                needs.
+              </p>
+            </div>
+
+            <!-- Main Flow Diagram -->
+            <div class="category-flow-diagram">
+              <h4>Main Flow</h4>
+              <div class="flow-image">
+                <img
+                  src="./flows/service-management-flow.png"
+                  alt="Service Management Flow Diagram"
+                />
+                <div class="flow-placeholder">
+                  <span>Service Management Flow Diagram</span>
+                  <small>Add flow diagram image here</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Functions List -->
+            <div class="category-functions">
+              <h4>Functions</h4>
+              <div class="features-grid">
+                <div class="feature-card function-khanh">
+                  <h3>Service Catalog UI</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>Service listing, search, filter, category navigation</p>
+                </div>
+                <div class="feature-card function-khanh">
+                  <h3>Service Details UI</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>
+                    Detailed service information, pricing, booking integration
+                  </p>
+                </div>
+                <div class="feature-card function-chau">
+                  <h3>Service Management API</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Chau</strong>
+                  </p>
+                  <p>
+                    CRUD operations, service data management, pricing updates
+                  </p>
+                </div>
+                <div class="feature-card function-quan">
+                  <h3>Service Analytics</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Quan</strong>
+                  </p>
+                  <p>Usage tracking, popular services, performance metrics</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX Screenshots -->
+            <div class="category-screenshots">
+              <h4>UI/UX Screenshots</h4>
+              <div class="screenshots-grid">
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/service-catalog.png"
+                    alt="Service Catalog"
+                  />
+                  <span class="screenshot-label">Service Catalog</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/service-details.png"
+                    alt="Service Details"
+                  />
+                  <span class="screenshot-label">Service Details</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/service-pricing.png"
+                    alt="Service Pricing"
+                  />
+                  <span class="screenshot-label">Pricing Information</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/service-categories.png"
+                    alt="Service Categories"
+                  />
+                  <span class="screenshot-label">Category Filter</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor Management -->
+          <div class="function-category" id="doctor-management">
+            <h3>Doctor Management</h3>
+
+            <!-- Workflow Description -->
+            <div class="category-workflow">
+              <h4>How It Works</h4>
+              <p>
+                Comprehensive doctor directory and management system allowing
+                users to find healthcare providers, view profiles, check
+                availability, read reviews, and book appointments with their
+                preferred doctors.
+              </p>
+            </div>
+
+            <!-- Main Flow Diagram -->
+            <div class="category-flow-diagram">
+              <h4>Main Flow</h4>
+              <div class="flow-image">
+                <img
+                  src="./flows/doctor-management-flow.png"
+                  alt="Doctor Management Flow Diagram"
+                />
+                <div class="flow-placeholder">
+                  <span>Doctor Management Flow Diagram</span>
+                  <small>Add flow diagram image here</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Functions List -->
+            <div class="category-functions">
+              <h4>Functions</h4>
+              <div class="features-grid">
+                <div class="feature-card function-khanh">
+                  <h3>Doctor Directory UI</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>Doctor listing, search, filter by specialty, location</p>
+                </div>
+                <div class="feature-card function-khanh">
+                  <h3>Doctor Profile UI</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>
+                    Detailed profiles, qualifications, reviews, booking button
+                  </p>
+                </div>
+                <div class="feature-card function-chau">
+                  <h3>Doctor Management API</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Chau</strong>
+                  </p>
+                  <p>
+                    Doctor data management, profile updates, availability sync
+                  </p>
+                </div>
+                <div class="feature-card function-quan">
+                  <h3>Rating System</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Quan</strong>
+                  </p>
+                  <p>Review management, rating calculations, feedback system</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX Screenshots -->
+            <div class="category-screenshots">
+              <h4>UI/UX Screenshots</h4>
+              <div class="screenshots-grid">
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/doctor-directory.png"
+                    alt="Doctor Directory"
+                  />
+                  <span class="screenshot-label">Doctor Directory</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/doctor-profile.png"
+                    alt="Doctor Profile"
+                  />
+                  <span class="screenshot-label">Doctor Profile</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/doctor-ratings.png"
+                    alt="Doctor Ratings"
+                  />
+                  <span class="screenshot-label">Ratings & Reviews</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/doctor-schedule.png"
+                    alt="Doctor Schedule"
+                  />
+                  <span class="screenshot-label">Schedule View</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog System -->
+          <div class="function-category" id="blog-system">
+            <h3>Blog System</h3>
+
+            <!-- Workflow Description -->
+            <div class="category-workflow">
+              <h4>How It Works</h4>
+              <p>
+                Healthcare blog platform providing educational content, health
+                tips, and medical insights. Features article management, search
+                functionality, and category-based content organization for
+                better user engagement.
+              </p>
+            </div>
+
+            <!-- Main Flow Diagram -->
+            <div class="category-flow-diagram">
+              <h4>Main Flow</h4>
+              <div class="flow-image">
+                <img
+                  src="./flows/blog-system-flow.png"
+                  alt="Blog System Flow Diagram"
+                />
+                <div class="flow-placeholder">
+                  <span>Blog System Flow Diagram</span>
+                  <small>Add flow diagram image here</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Functions List -->
+            <div class="category-functions">
+              <h4>Functions</h4>
+              <div class="features-grid">
+                <div class="feature-card function-khanh">
+                  <h3>Blog Display UI</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>
+                    Blog list, article view, search and filter functionality
+                  </p>
+                </div>
+                <div class="feature-card function-chau">
+                  <h3>Blog Management API</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Chau</strong>
+                  </p>
+                  <p>Create, edit, delete blog posts, category management</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX Screenshots -->
+            <div class="category-screenshots">
+              <h4>UI/UX Screenshots</h4>
+              <div class="screenshots-grid">
+                <div class="screenshot-item">
+                  <img src="./screenshots/blog-list.png" alt="Blog List" />
+                  <span class="screenshot-label">Blog List View</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/blog-article.png"
+                    alt="Blog Article"
+                  />
+                  <span class="screenshot-label">Article View</span>
+                </div>
+                <div class="screenshot-item">
+                  <img src="./screenshots/blog-search.png" alt="Blog Search" />
+                  <span class="screenshot-label">Search & Filter</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/blog-categories.png"
+                    alt="Blog Categories"
+                  />
+                  <span class="screenshot-label">Category Browse</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menstrual Tracker -->
+          <div class="function-category" id="menstrual-tracker">
+            <h3>Menstrual Tracker</h3>
+
+            <!-- Workflow Description -->
+            <div class="category-workflow">
+              <h4>How It Works</h4>
+              <p>
+                Advanced menstrual cycle tracking system with AI-powered
+                predictions. Helps users monitor their reproductive health,
+                predict cycles, track symptoms, and receive personalized health
+                insights and recommendations.
+              </p>
+            </div>
+
+            <!-- Main Flow Diagram -->
+            <div class="category-flow-diagram">
+              <h4>Main Flow</h4>
+              <div class="flow-image">
+                <img
+                  src="./flows/menstrual-tracker-flow.png"
+                  alt="Menstrual Tracker Flow Diagram"
+                />
+                <div class="flow-placeholder">
+                  <span>Menstrual Tracker Flow Diagram</span>
+                  <small>Add flow diagram image here</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Functions List -->
+            <div class="category-functions">
+              <h4>Functions</h4>
+              <div class="features-grid">
+                <div class="feature-card function-khanh">
+                  <h3>Tracker Main UI</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>
+                    Cycle tracking interface, calendar view, data input forms
+                  </p>
+                </div>
+                <div class="feature-card function-khanh">
+                  <h3>Tracker Validation</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Khanh</strong>
+                  </p>
+                  <p>Real-time validation, error handling, data verification</p>
+                </div>
+                <div class="feature-card function-chau">
+                  <h3>AI Prediction Model</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Chau</strong>
+                  </p>
+                  <p>
+                    Cycle prediction algorithm, pattern analysis, health
+                    insights
+                  </p>
+                </div>
+                <div class="feature-card function-quan">
+                  <h3>Data Analytics</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Quan</strong>
+                  </p>
+                  <p>
+                    Cycle analysis, trend tracking, health report generation
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX Screenshots -->
+            <div class="category-screenshots">
+              <h4>UI/UX Screenshots</h4>
+              <div class="screenshots-grid">
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/tracker-calendar.png"
+                    alt="Tracker Calendar"
+                  />
+                  <span class="screenshot-label">Calendar View</span>
+                </div>
+                <div class="screenshot-item">
+                  <img src="./screenshots/tracker-input.png" alt="Data Input" />
+                  <span class="screenshot-label">Data Input Form</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/tracker-predictions.png"
+                    alt="AI Predictions"
+                  />
+                  <span class="screenshot-label">AI Predictions</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/tracker-insights.png"
+                    alt="Health Insights"
+                  />
+                  <span class="screenshot-label">Health Insights</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Management -->
+          <div class="function-category" id="backend-management">
+            <h3>Backend Management</h3>
+
+            <!-- Workflow Description -->
+            <div class="category-workflow">
+              <h4>How It Works</h4>
+              <p>
+                Comprehensive backend administration system for clinic staff and
+                administrators. Provides tools for user management, system
+                monitoring, analytics, staff coordination, and notification
+                management to ensure smooth clinic operations.
+              </p>
+            </div>
+
+            <!-- Main Flow Diagram -->
+            <div class="category-flow-diagram">
+              <h4>Main Flow</h4>
+              <div class="flow-image">
+                <img
+                  src="./flows/backend-management-flow.png"
+                  alt="Backend Management Flow Diagram"
+                />
+                <div class="flow-placeholder">
+                  <span>Backend Management Flow Diagram</span>
+                  <small>Add flow diagram image here</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Functions List -->
+            <div class="category-functions">
+              <h4>Functions</h4>
+              <div class="features-grid">
+                <div class="feature-card function-an">
+                  <h3>Admin Dashboard</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>An</strong>
+                  </p>
+                  <p>System overview, user management, analytics dashboard</p>
+                </div>
+                <div class="feature-card function-chau">
+                  <h3>Staff Management</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Chau</strong>
+                  </p>
+                  <p>Staff accounts, role management, permission system</p>
+                </div>
+                <div class="feature-card function-quan">
+                  <h3>System Analytics</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Quan</strong>
+                  </p>
+                  <p>Usage statistics, performance monitoring, reporting</p>
+                </div>
+                <div class="feature-card function-chau">
+                  <h3>Notification System</h3>
+                  <p class="feature-assignee">
+                    Assigned to: <strong>Chau</strong>
+                  </p>
+                  <p>Email notifications, SMS alerts, push notifications</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX Screenshots -->
+            <div class="category-screenshots">
+              <h4>UI/UX Screenshots</h4>
+              <div class="screenshots-grid">
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/admin-dashboard.png"
+                    alt="Admin Dashboard"
+                  />
+                  <span class="screenshot-label">Admin Dashboard</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/staff-management.png"
+                    alt="Staff Management"
+                  />
+                  <span class="screenshot-label">Staff Management</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/system-analytics.png"
+                    alt="System Analytics"
+                  />
+                  <span class="screenshot-label">Analytics View</span>
+                </div>
+                <div class="screenshot-item">
+                  <img
+                    src="./screenshots/notification-center.png"
+                    alt="Notification Center"
+                  />
+                  <span class="screenshot-label">Notification Center</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Demo Section -->
+      <section id="demo" class="section">
+        <div class="container">
+          <h1 class="section-title">Demo Videos</h1>
+          <div class="demo-content animate-on-scroll">
+            <div class="demo-video">
+              <h3>User Authentication Flow</h3>
+              <div class="video-placeholder">
+                <video src="" controls style="display: none"></video>
+                <div class="placeholder-text">
+                  <span>Authentication Demo Video</span>
+                  <small>1280x720 recommended • Add src="" to video tag</small>
+                </div>
+              </div>
+            </div>
+            <div class="demo-video">
+              <h3>Main Application Workflow</h3>
+              <div class="video-placeholder">
+                <video src="" controls style="display: none"></video>
+                <div class="placeholder-text">
+                  <span>Main Workflow Demo Video</span>
+                  <small>1280x720 recommended • Add src="" to video tag</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Summary Section -->
+      <section id="summary" class="section">
+        <div class="container">
+          <h1 class="section-title">Project Summary</h1>
+          <div class="summary-content animate-on-scroll">
+            <div class="summary-grid">
+              <div class="summary-card">
+                <h3>Technical Achievements</h3>
+                <ul>
+                  <li>Implemented modern responsive design</li>
+                  <li>Integrated secure authentication system</li>
+                  <li>Optimized database performance</li>
+                  <li>Deployed on cloud platform</li>
+                  <li>Achieved comprehensive feature coverage</li>
+                </ul>
+              </div>
+              <div class="summary-card">
+                <h3>Challenges Overcome</h3>
+                <ul>
+                  <li>Cross-browser compatibility issues</li>
+                  <li>Performance optimization</li>
+                  <li>Security implementation</li>
+                  <li>Team collaboration & coordination</li>
+                  <li>Complex state management</li>
+                </ul>
+              </div>
+              <div class="summary-card">
+                <h3>Future Enhancements</h3>
+                <ul>
+                  <li>Mobile application development</li>
+                  <li>Advanced analytics dashboard</li>
+                  <li>Third-party API integrations</li>
+                  <li>Machine learning features</li>
+                  <li>Microservices architecture</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-links">
+          <a
+            href="https://github.com/your-repo"
+            target="_blank"
+            class="footer-link github"
+          >
+            GitHub Repository
+          </a>
+          <a
+            href="https://github.com/bunpmc/FE-Gender-Healthcare-Service-Management-System"
+            target="_blank"
+            class="footer-link"
+          >
+            SRS Documentation
+          </a>
+          <a
+            href="https://docs.google.com/document/d/1oBLSiuSfPSWVeXdtKrjtQG4J4tGFj0DBvmVC1Jv1SRA/edit?usp=drivesdk"
+            target="_blank"
+            class="footer-link"
+          >
+            Live Demo
+          </a>
+        </div>
+        <p>© 2024 Web Development Project Team. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
