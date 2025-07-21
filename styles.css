@@ -268,7 +268,7 @@ body::after {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.5rem;
   margin-bottom: 3rem;
   width: 100%;
@@ -542,10 +542,35 @@ body::after {
   color: #60a5fa;
 }
 
+.team-member.duc {
+  border-color: rgba(168, 85, 247, 0.4);
+  background: rgba(168, 85, 247, 0.05);
+}
+
+.team-member.duc::before {
+  color: #a855f7;
+}
+
+.team-member.duc h3 {
+  color: #a855f7;
+}
+
+.team-member.duc .member-role {
+  color: #c084fc;
+}
+
+.team-member.duc .member-photo {
+  border-color: rgba(168, 85, 247, 0.6);
+}
+
+.team-member.duc .stat-number {
+  color: #a855f7;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1400px) {
   .team-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1.2rem;
   }
 
@@ -561,7 +586,7 @@ body::after {
 
 @media (max-width: 1200px) {
   .team-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 
@@ -571,6 +596,13 @@ body::after {
 
   .member-photo {
     height: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -640,6 +672,21 @@ body::after {
 
 .function-an .feature-assignee strong {
   color: #60a5fa !important;
+}
+
+.function-duc {
+  background: rgba(168, 85, 247, 0.08) !important;
+  border: 1px solid rgba(168, 85, 247, 0.3) !important;
+}
+
+.function-duc:hover {
+  background: rgba(168, 85, 247, 0.12) !important;
+  border-color: rgba(168, 85, 247, 0.5) !important;
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.15) !important;
+}
+
+.function-duc .feature-assignee strong {
+  color: #a855f7 !important;
 }
 
 /* Remove the old generic feature-card styling that conflicts */
@@ -2122,11 +2169,7 @@ body::after {
 
 .database-component {
   border-color: rgba(245, 158, 11, 0.4);
-  background: rgba(245, 158, 11, 0.05);
-}
-
-.database-component::before {
-  background: linear-gradient(90deg, #f59e0b, #d97706);
+  background: rgba(245, 158, 11, 0.08);
 }
 
 .database-component h4 {
@@ -2159,6 +2202,122 @@ body::after {
   border-radius: 16px;
   border: 1px solid rgba(75, 85, 99, 0.4);
   backdrop-filter: blur(15px);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.deployment-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #10b981, #f59e0b);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.deployment-card:hover::before {
+  opacity: 1;
+}
+
+.deployment-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  border-color: rgba(75, 85, 99, 0.6);
+}
+
+.deployment-card h4 {
+  font-size: 1.2rem;
+  color: #f9fafb;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+/* User role styling - enhanced */
+.user-categories {
+  text-align: left;
+}
+
+.user-group {
+  margin-bottom: 2rem;
+}
+
+.user-group:last-child {
+  margin-bottom: 0;
+}
+
+.user-group strong {
+  color: #3b82f6;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.user-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-group li {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(75, 85, 99, 0.2);
+}
+
+.user-group li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.role-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  min-width: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+.deployment-card p {
+  color: #d1d5db;
+  line-height: 1.5;
+  font-size: 0.85rem;
+  flex: 1;
+}
+
+/* Function assignment colors for Duc */
+.function-duc {
+  background: rgba(168, 85, 247, 0.08) !important;
+  border: 1px solid rgba(168, 85, 247, 0.3) !important;
+}
+
+.function-duc:hover {
+  background: rgba(168, 85, 247, 0.12) !important;
+  border-color: rgba(168, 85, 247, 0.5) !important;
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.15) !important;
+}
+
+.function-duc .feature-assignee strong {
+  color: #a855f7 !important;
+  background: rgba(31, 41, 55, 0.6);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(75, 85, 99, 0.4);
+  backdrop-filter: blur(15px);
   transition: all 0.3s ease;
 }
 
@@ -2180,34 +2339,103 @@ body::after {
   font-size: 0.95rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .tech-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+/* User role styling */
+.user-categories {
+  text-align: left;
+}
 
-  .architecture-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+.user-group {
+  margin-bottom: 1.5rem;
+}
 
-  .components-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+.user-group strong {
+  color: #60a5fa;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
 
-  .deployment-info {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
+.user-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .tech-category h3,
-  .architecture-section h3 {
-    font-size: 1.8rem;
-  }
+.user-group li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
 
-  .architecture-overview h3 {
-    font-size: 2rem;
-  }
+.role-badge {
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  min-width: 80px;
+  text-align: center;
+}
+
+.role-badge.guest {
+  background: rgba(156, 163, 175, 0.2);
+  color: #d1d5db;
+  border: 1px solid rgba(156, 163, 175, 0.4);
+}
+
+.role-badge.customer {
+  background: rgba(59, 130, 246, 0.2);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.role-badge.admin {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.role-badge.doctor {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.role-badge.receptionist {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.role-badge.manager {
+  background: rgba(168, 85, 247, 0.2);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+}
+
+/* Learning outcomes styling - enhanced */
+.learning-outcomes ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.learning-outcomes li {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(75, 85, 99, 0.2);
+}
+
+.learning-outcomes li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.learning-outcomes strong {
+  color: #10b981;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
 }
